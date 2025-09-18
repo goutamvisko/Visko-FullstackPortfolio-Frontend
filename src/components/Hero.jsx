@@ -10,9 +10,8 @@ import {
   SiLaravel,
 } from "react-icons/si";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from 'swiper/modules';
-
-
+import { Autoplay } from "swiper/modules";
+import resume from "../assets/img/priyanshu_cv.pdf";
 import "swiper/css";
 import "swiper/css/autoplay";
 
@@ -22,31 +21,67 @@ const profileImageUrl =
 const Hero = () => {
   const sectionVariants = {
     hidden: { opacity: 0 },
-    visible: { opacity: 1, transition: { staggerChildren: 0.2, duration: 0.5 } },
+    visible: {
+      opacity: 1,
+      transition: { staggerChildren: 0.2, duration: 0.5 },
+    },
   };
 
   const itemVariants = {
     hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeInOut" } },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.6, ease: "easeInOut" },
+    },
   };
 
   const imageVariants = {
     hidden: { opacity: 0, scale: 0.8, rotate: -10 },
-    visible: { opacity: 1, scale: 1, rotate: 0, transition: { duration: 0.8, ease: "easeOut" } },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      rotate: 0,
+      transition: { duration: 0.8, ease: "easeOut" },
+    },
   };
 
   const techIcons = [
     { icon: <FaNodeJs size={28} className="text-gray-300" />, name: "Node.js" },
-    { icon: <SiTailwindcss size={28} className="text-gray-300" />, name: "Tailwind" },
-    { icon: <SiNextdotjs size={28} className="text-gray-300" />, name: "Next.js" },
-    { icon: <SiFirebase size={28} className="text-gray-300" />, name: "Firebase" },
-    { icon: <SiMongodb size={28} className="text-gray-300" />, name: "MongoDB" },
+    {
+      icon: <SiTailwindcss size={28} className="text-gray-300" />,
+      name: "Tailwind",
+    },
+    {
+      icon: <SiNextdotjs size={28} className="text-gray-300" />,
+      name: "Next.js",
+    },
+    {
+      icon: <SiFirebase size={28} className="text-gray-300" />,
+      name: "Firebase",
+    },
+    {
+      icon: <SiMongodb size={28} className="text-gray-300" />,
+      name: "MongoDB",
+    },
     { icon: <SiReact size={28} className="text-gray-300" />, name: "React" },
-    { icon: <SiLaravel size={28} className="text-gray-300" />, name: "Laravel" },
-    { icon: <SiFirebase size={28} className="text-gray-300" />, name: "Firebase" },
-    { icon: <SiMongodb size={28} className="text-gray-300" />, name: "MongoDB" },
+    {
+      icon: <SiLaravel size={28} className="text-gray-300" />,
+      name: "Laravel",
+    },
+    {
+      icon: <SiFirebase size={28} className="text-gray-300" />,
+      name: "Firebase",
+    },
+    {
+      icon: <SiMongodb size={28} className="text-gray-300" />,
+      name: "MongoDB",
+    },
     { icon: <SiReact size={28} className="text-gray-300" />, name: "React" },
-    { icon: <SiLaravel size={28} className="text-gray-300" />, name: "Laravel" },
+    {
+      icon: <SiLaravel size={28} className="text-gray-300" />,
+      name: "Laravel",
+    },
   ];
 
   return (
@@ -61,14 +96,13 @@ const Hero = () => {
         <div className="animate-gradient-border rounded-2xl p-0.5">
           <div className="bg-[#2a2a30] text-white relative overflow-hidden rounded-2xl p-6 sm:p-8 md:p-10 lg:p-12">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
-
               {/* Image Section */}
               <motion.div
                 className="w-full mx-auto order-1 md:order-2"
                 variants={imageVariants}
               >
                 <div
-                  className="relative w-full h-72 sm:h-96 md:h-[400px] lg:h-[450px] "
+                  className="relative w-full h-72 sm:h-96 md:h-[400px] lg:h-[550px] "
                   style={{
                     clipPath:
                       "polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)",
@@ -76,7 +110,7 @@ const Hero = () => {
                 >
                   <img
                     src={profileImageUrl}
-                    alt="Goutam - Full Stack Developer"
+                    alt="Param - Full Stack Developer"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -84,21 +118,42 @@ const Hero = () => {
 
               {/* Text Section */}
               <div className="text-center md:text-left order-2 md:order-1">
-                <motion.p className="mb-4 text-gray-400" variants={itemVariants}>
-                  <span className="text-pink-500">&lt;span&gt;</span> Hey, I'm Goutam{" "}
-                  <span className="text-pink-500">&lt;/span&gt;</span>
+                <motion.p
+                  className="mb-4 text-gray-400"
+                  variants={itemVariants}
+                >
+                  <span className="text-pink-500">&lt;span&gt;</span> Hey, I'm
+                  Param <span className="text-pink-500">&lt;/span&gt;</span>
                 </motion.p>
-                <motion.h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4" variants={itemVariants}>
-                  Senior &#123;Full <br className="hidden sm:block" />
-                  <span className="text-green-400">Stack</span>&#125; Web & App <br className="hidden sm:block" />
-                  Developer
+                <motion.h1
+                  className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4"
+                  variants={itemVariants}
+                >
+                  Senior &#123;Full- <br className="hidden sm:block" />
+                  <span className="text-green-400">Stack</span>&#125; Web
+                  <span className="text-green-400"> Developer</span>
                 </motion.h1>
-                <motion.p className="mb-8 text-gray-400 max-w-md sm:max-w-lg md:max-w-xl mx-auto md:mx-0 leading-relaxed" variants={itemVariants}>
+                <motion.p
+                  className="mb-8 text-gray-400 max-w-md sm:max-w-lg md:max-w-xl mx-auto md:mx-0 leading-relaxed"
+                  variants={itemVariants}
+                >
                   <span className="text-pink-500">&lt;p&gt;</span>
-                  With expertise in cutting-edge tech like <span className="text-red-400">React</span>, <span className="text-red-400">NodeJS</span>, and <span className="text-red-400">Laravel</span>, I deliver innovative and robust web solutions.
+                  With expertise in cutting-edge tech like{" "}
+                  <span className="text-red-400">React</span>,{" "}
+                  <span className="text-red-400">NodeJS</span>, and{" "}
+                  <span className="text-red-400">Laravel</span>, I deliver
+                  innovative and robust web solutions. I also build scalable{" "}
+                  <span className="text-red-400">REST APIs</span> and optimize
+                  performance for enterprise-grade systems. My experience
+                  includes working with{" "}
+                  <span className="text-red-400">Docker</span>,{" "}
+                  <span className="text-red-400">CI/CD pipelines</span>, and
+                  cloud deployments for seamless delivery. Passionate about{" "}
+                  <span className="text-red-400">AI/ML</span> integration, I
+                  leverage modern frameworks to create intelligent, data-driven
+                  applications.
                   <span className="text-pink-500">&lt;/p&gt;</span>
                 </motion.p>
-
                 {/* Tech Stack Slider */}
                 <motion.div className="mb-10" variants={itemVariants}>
                   <Swiper
@@ -120,7 +175,10 @@ const Hero = () => {
                       <SwiperSlide key={index}>
                         <motion.div
                           className="p-3 border border-gray-600/50 rounded-lg flex items-center justify-center"
-                          whileHover={{ scale: 1.1, backgroundColor: "#3a3a40" }}
+                          whileHover={{
+                            scale: 1.1,
+                            backgroundColor: "#3a3a40",
+                          }}
                           transition={{ type: "spring", stiffness: 400 }}
                         >
                           {tech.icon}
@@ -128,11 +186,10 @@ const Hero = () => {
                       </SwiperSlide>
                     ))}
                   </Swiper>
-                </motion.div>...and more
-
-
+                </motion.div>
+                ...and more
                 <motion.a
-                  href="#download-cv"
+                  href={resume}
                   className="inline-flex items-center text-green-400 border border-green-400/50 px-5 sm:px-6 py-3 transition-colors group hover:bg-green-400/10 rounded-lg"
                   variants={itemVariants}
                   whileHover={{ scale: 1.05 }}

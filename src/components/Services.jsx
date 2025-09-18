@@ -13,10 +13,10 @@ import {
 const servicesData = [
   {
     icon: <LayoutTemplate className="w-8 h-8 text-gray-400" />,
-    title: 'Web & App Development',
+    title: 'Web Development',
     description: 'Crafting visually appealing and user-friendly interfaces using ',
-    keywords: ['HTML', 'CSS', 'JavaScript'],
-    details: ', and modern frameworks like React and Angular.'
+    keywords: ['React' ,'Redux', 'MUI','JavaScript','Next.js', 'HTML', 'CSS', 'Tailwind CSS'],
+    details:  ' and modern technologies.'
   },
   {
     icon: <Database className="w-8 h-8 text-gray-400" />,

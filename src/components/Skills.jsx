@@ -31,18 +31,12 @@ export default function Skills({ id }) {
     { icon: <SiNextdotjs size={36} />, label: "Next.js" },
     { icon: <SiFirebase size={36} />, label: "Firebase" },
     { icon: <SiMongodb size={36} />, label: "MongoDB" },
-    { icon: <SiTailwindcss size={36} />, label: "TailwindCSS" },
     { icon: <SiVuedotjs size={36} />, label: "Vue" },
-    { icon: <SiAngular size={36} />, label: "Angular" },
-    { icon: <SiLaravel size={36} />, label: "Laravel" },
     { icon: <FaAws size={36} />, label: "AWS" },
     { icon: <SiHeroku size={36} />, label: "Heroku" },
     { icon: <SiGraphql size={36} />, label: "GraphQL" },
     { icon: <SiMysql size={36} />, label: "MySQL" },
-    { icon: <SiPostgresql size={36} />, label: "PostgreSQL" },
     { icon: <SiGit size={36} />, label: "Git" },
-    { icon: <SiPython size={36} />, label: "Python" },
-    { icon: <SiDjango size={36} />, label: "Django" },
     { icon: <SiDocker size={36} />, label: "Docker" },
   ];
 
@@ -105,7 +99,7 @@ export default function Skills({ id }) {
                         <div className="text-gray-400 transition-colors group-hover:text-green-400">
                           {skill.icon}
                         </div>
-                        <p className="text-sm mt-3 text-gray-300 font-semibold">
+                        <p className="text-sm md:text-[11px] mt-3 text-gray-300 font-semibold">
                           {skill.label}
                         </p>
                       </div>
@@ -126,21 +120,20 @@ export default function Skills({ id }) {
                   <span className="flex items-center gap-2 text-white font-semibold mb-1">
                     <Code className="w-4 h-4 text-green-400" /> Front-End:
                   </span>
-                  Proficient in React, Angular, and Vue.js for building dynamic
-                  UIs.
+                  Proficient in React, Redux, and Next.js  for building application.
                 </p>
                 <p>
                   <span className="flex items-center gap-2 text-white font-semibold mb-1">
                     <Server className="w-4 h-4 text-green-400" /> Back-End:
                   </span>
-                  Experienced with Node.js, Express, Python, and Django for
+                  Experienced with Node.js, Express ,Php and  Codeigiter  for
                   robust server-side logic.
                 </p>
                 <p>
                   <span className="flex items-center gap-2 text-white font-semibold mb-1">
                     <Database className="w-4 h-4 text-green-400" /> Databases:
                   </span>
-                  Skilled in SQL (MySQL, PostgreSQL) and NoSQL (MongoDB)
+                  Skilled in SQL (MySQL) and NoSQL (MongoDB)
                   databases.
                 </p>
                 <p>

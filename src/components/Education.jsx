@@ -32,19 +32,50 @@ export default function Education({ id }) {
   };
 
   const educationData = [
-    { year: "2020-2024", institution: "MIT", degree: "Bachelor’s Degree in Computer Science" },
-    { year: "2018-2019", institution: "Harvard University", degree: "Certification in React & Node.js" },
-    { year: "2015-2016", institution: "Stanford University", degree: "Certification in Full Stack Web Development" },
+    {
+      year: "Jun 2018 – Feb 2020",
+      institution: "DAVV University, Indore",
+      degree: "MCA (Master of Computer Applications)",
+    },
+    {
+      year: "Jul 2015 – Mar 2017",
+      institution: "DAVV University, Indore",
+      degree: "BCA (Bachelor of Computer Applications)",
+    },
   ];
 
   const researchData = [
-    { year: "2023-2024", title: "Advanced Data Analytics with Big Data Tools", description: "Utilized big data tools for advanced analytics and insights." },
-    { year: "2021-2023", title: "Cloud-Native Application Architectures", description: "Studied best practices for designing cloud-native applications." },
-    { year: "2019-2020", title: "AI-Driven User Experience Personalization", description: "Leveraged AI to personalize user experiences based on behavior." },
+    {
+      year: "2024 – Present",
+      title: "Retrieval-Augmented Generation (RAG) for Recruitment Automation",
+      description:
+        "Researched and implemented RAG pipelines using Gemini & FAISS for improving accuracy in hiring workflows, including resume shortlisting and job matching.",
+    },
+    {
+      year: "2023 – 2024",
+      title: "Scalable AI Chatbot Architectures",
+      description:
+        "Explored fine-tuning and deployment of LLMs (Mistral, LLaMA, Gemini) with FastAPI, Docker, and Kubernetes for building context-aware conversational systems.",
+    },
+    {
+      year: "2022 – 2023",
+      title: "Real-Time Analytics & Dashboards",
+      description:
+        "Developed data-driven dashboards with React, WebSockets, and SQL/NoSQL for HR, gaming, and food-tech platforms, improving decision-making efficiency.",
+    },
+    {
+      year: "2019 – 2021",
+      title: "Enterprise Web Systems & POS",
+      description:
+        "Worked on CRM, POS, and financial dashboards with role-based access, JWT authentication, and SQL optimization for scalable business platforms.",
+    },
   ];
 
   return (
-    <section id={id} className="bg-[#1e1e1e] py-6 px-6 md:px-12 flex justify-center font-mono">
+    <section
+      id={id}
+      className="bg-[#1e1e1e] py-6 px-6 md:px-12 flex justify-center font-mono"
+    >
       <div className="w-full max-w-7xl flex flex-col items-center">
         {/* Header */}
         <motion.div
@@ -54,8 +85,12 @@ export default function Education({ id }) {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <p className="text-green-400 text-sm font-medium mb-2">• My Journey </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-white">Education & Research</h2>
+          <p className="text-green-400 text-sm font-medium mb-2">
+            • My Journey{" "}
+          </p>
+          <h2 className="text-3xl md:text-4xl font-bold text-white">
+            Education & Research
+          </h2>
         </motion.div>
 
         {/* Grid for the two cards */}
@@ -76,11 +111,17 @@ export default function Education({ id }) {
                 </div>
                 <motion.ul className="space-y-6" variants={listVariants}>
                   {educationData.map((item, index) => (
-                    <motion.li key={index} className="relative pl-8" variants={listItemVariants}>
+                    <motion.li
+                      key={index}
+                      className="relative pl-8"
+                      variants={listItemVariants}
+                    >
                       <div className="absolute left-0 top-1 w-2.5 h-2.5 bg-green-400 rounded-full border-2 border-[#2a2a30]"></div>
                       <div className="absolute left-[4px] top-5 h-[calc(100%_-_10px)] w-0.5 bg-gray-700/50 last:hidden"></div>
                       <p className="text-xs text-gray-400 mb-1">{item.year}</p>
-                      <p className="font-semibold text-green-400">{item.institution}</p>
+                      <p className="font-semibold text-green-400">
+                        {item.institution}
+                      </p>
                       <p className="text-sm text-gray-300">{item.degree}</p>
                     </motion.li>
                   ))}
@@ -99,12 +140,20 @@ export default function Education({ id }) {
                 </div>
                 <motion.ul className="space-y-6" variants={listVariants}>
                   {researchData.map((item, index) => (
-                    <motion.li key={index} className="relative pl-8" variants={listItemVariants}>
+                    <motion.li
+                      key={index}
+                      className="relative pl-8"
+                      variants={listItemVariants}
+                    >
                       <div className="absolute left-0 top-1 w-2.5 h-2.5 bg-green-400 rounded-full border-2 border-[#2a2a30]"></div>
                       <div className="absolute left-[4px] top-5 h-[calc(100%_-_10px)] w-0.5 bg-gray-700/50 last:hidden"></div>
                       <p className="text-xs text-gray-400 mb-1">{item.year}</p>
-                      <p className="font-semibold text-green-400">{item.title}</p>
-                      <p className="text-sm text-gray-300">{item.description}</p>
+                      <p className="font-semibold text-green-400">
+                        {item.title}
+                      </p>
+                      <p className="text-sm text-gray-300">
+                        {item.description}
+                      </p>
                     </motion.li>
                   ))}
                 </motion.ul>

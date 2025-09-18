@@ -7,20 +7,9 @@ import Skills from "../components/Skills";
 import Education from "../components/Education";
 import Stats from "../components/Stats";
 import Experience from "../components/Experience";
-import Inquiry from "../components/Inquiry"
 import Contact from "../components/Contact" 
 export default function LandingPage() {
-    const [showInquiry, setShowInquiry] = useState(false);
 
-    // Show inquiry form modal only on first visit
-  useEffect(() => {
-    const hasVisited = localStorage.getItem("isInquiry");
-    if (!hasVisited) {
-      setShowInquiry(true);
-      localStorage.setItem("isInquiry", "true");
-    }
-  }, []);
-  
   return (
     <>
       <Hero id="hero" />
@@ -32,14 +21,6 @@ export default function LandingPage() {
       <Education id="education"/>
       <Projects id="projects"/>
       <Contact id="contact"/>
-
-      {/*Inquiry Modal Popup */}
-      {showInquiry && (
-        <Inquiry
-          isOpen={showInquiry}
-          onClose={() => setShowInquiry(false)}
-        />
-      )}
     </>
   );
 }

@@ -35,22 +35,22 @@ export default function Stats({ id }) {
   const stats = [
     {
       icon: <FaProjectDiagram className="text-green-400 text-3xl" />,
-      value: 12,
+      value: 6,
       label: "Year Experience",
     },
     {
       icon: <MdComputer className="text-green-400 text-3xl" />,
-      value: 250,
+      value: 12,
       label: "Projects Completed",
     },
     {
       icon: <FaHeart className="text-green-400 text-3xl" />,
-      value: 680,
+      value: 30,
       label: "Satisfied Clients",
     },
     {
       icon: <FaAward className="text-green-400 text-3xl" />,
-      value: 18,
+      value: 6,
       label: "Awards Winner",
     },
   ];

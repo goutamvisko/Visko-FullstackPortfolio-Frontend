@@ -1,56 +1,68 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { FaGoogle, FaAmazon, FaTwitter, FaPaypal } from "react-icons/fa";
+import { FaBuilding, FaCode, FaLaptopCode, FaReact } from "react-icons/fa";
 
 // Data for different job experiences
 const experienceData = [
   {
-    icon: <FaGoogle className="text-2xl text-red-500" />,
-    company: "Google",
-    duration: "2018 – Present",
-    role: "Senior Software Engineer",
+    icon: <FaBuilding className="text-2xl text-red-500" />,
+    company: "Visko Group Pvt. Ltd | Indore",
+    duration: "Dec 2024 – Present",
+    role: "Full-Stack Developer",
     responsibilities: [
-      "Led development of scalable web applications, improving performance and user experience for millions of users.",
-      "Implemented machine learning algorithms to enhance search functionality and content relevance.",
-      "Collaborated with cross-functional teams to integrate new features seamlessly using Agile methodologies.",
+      "Developed multi-role JWT authentication, POS workflows, and centralized admin modules.",
+      "Built CRM & POS platform with dashboards to streamline operations.",
+      "Collaborated with cross-functional teams to integrate scalable solutions.",
     ],
-    techStack: ["Python", "TensorFlow", "Angular", "Kubernetes", "GCP"],
+    techStack: ["React.js", "PHP (CI4)", "MySQL", "JWT", "Redux", "Material UI", "Mantine UI", "Bootstrap"],
   },
   {
-    icon: <FaTwitter className="text-2xl text-sky-400" />,
-    company: "Twitter (X)",
-    duration: "2015 – 2018",
-    role: "Full Stack Developer",
+    icon: <FaLaptopCode className="text-2xl text-sky-400" />,
+    company: "Virtual Height IT Service Pvt. Ltd | Indore",
+    duration: "Jun 2023 – Jul 2024",
+    role: "MERN Stack Developer",
     responsibilities: [
-      "Developed and maintained real-time data streaming features for the main application feed.",
-      "Built and scaled back-end services to handle high-traffic loads and ensure low latency.",
-      "Contributed to the front-end redesign using React, improving component reusability and performance.",
+      "Developed gaming modules for Avisagameguild platform with 30% faster performance.",
+      "Implemented secure JWT-based authentication for real-time interactions.",
+      "Enhanced PMS system with 10+ features, boosting performance by 70% for 300+ users.",
     ],
-    techStack: ["React", "Node.js", "Scala", "Kafka", "AWS"],
+    techStack: ["React.js", "Express.js", "MongoDB", "Redux", "JWT", "SQL", "Redux Toolkit", "REST API", "Material UI", "Mantine UI"],
   },
   {
-    icon: <FaAmazon className="text-2xl text-yellow-500" />,
-    company: "Amazon",
-    duration: "2012 – 2015",
-    role: "Back-End Engineer",
+    icon: <FaReact className="text-2xl text-green-400" />,
+    company: "Yuvasoft Technology Pvt. Ltd | Indore",
+    duration: "Jun 2022 – Jun 2023",
+    role: "Frontend Developer",
     responsibilities: [
-        "Designed and implemented microservices for the AWS S3 team, focusing on durability and availability.",
-        "Optimized database queries and caching strategies, reducing API response times by 30%.",
-        "Wrote extensive unit and integration tests to maintain high code quality and system reliability.",
+      "Developed UI for XAMEEL food ordering platform used by 2,500+ users.",
+      "Built analytics dashboards and integrated APIs for real-time tracking.",
+      "Improved frontend performance and user experience.",
     ],
-    techStack: ["Java", "Spring Boot", "DynamoDB", "AWS Lambda", "EC2"],
+    techStack: ["React.js", "Material UI", "React-Chart", "Redux", "REST API"],
   },
   {
-    icon: <FaPaypal className="text-2xl text-blue-400" />,
-    company: "PayPal",
-    duration: "2010 – 2012",
-    role: "Junior Web Developer",
+    icon: <FaCode className="text-2xl text-yellow-500" />,
+    company: "Aking Web Tech Pvt. Ltd | Indore",
+    duration: "Jan 2021 – May 2022",
+    role: "React Developer",
     responsibilities: [
-      "Assisted in developing front-end components for the main payment processing application.",
-      "Fixed bugs and implemented minor features for internal financial tools.",
-      "Learned to work in a large-scale codebase and participated in code reviews.",
+      "Built responsive product listings and secure checkout workflows for e-commerce.",
+      "Developed order & payment management features.",
+      "Optimized frontend performance with reusable components.",
     ],
-    techStack: ["JavaScript", "jQuery", "HTML/CSS", "Java", "SQL"],
+    techStack: ["React.js", "Redux", "Material UI", "Bootstrap", "REST API"],
+  },
+  {
+    icon: <FaReact className="text-2xl text-blue-400" />,
+    company: "Elite Capital | Indore",
+    duration: "Jan 2019 – Dec 2020",
+    role: "React Developer",
+    responsibilities: [
+      "Developed investment tracking dashboards and secure financial web portals.",
+      "Built responsive reports and financial data visualizations.",
+      "Enhanced UI for seamless financial monitoring.",
+    ],
+    techStack: ["React.js", "JavaScript", "Bootstrap", "SQL"],
   },
 ];
 

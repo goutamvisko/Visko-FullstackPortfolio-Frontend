@@ -31,7 +31,7 @@ const Navbar = () => {
             {/* Logo */}
             <a href="#" className="flex items-center space-x-2">
               <FaCode className="text-green-400 text-3xl" />
-              <span className="text-xl font-bold text-white">Goutam.dev</span>
+              <span className="text-xl font-bold text-white">Param.dev</span>
             </a>
           </div>
 
@@ -55,13 +55,10 @@ const Navbar = () => {
           {/* Right Section: Social Icons & Theme Toggle */}
           <div className="flex items-center space-x-4">
             <div className="hidden md:flex items-center space-x-5 pr-2">
-              <a href="#" aria-label="X/Twitter" className="hover:text-white">
-                <FaTwitter  size={18} />
-              </a>
-              <a href="#" aria-label="LinkedIn" className="hover:text-white">
+              <a href="https://www.linkedin.com/in/parmanand-kumawat1007/" aria-label="LinkedIn" className="hover:text-white">
                 <FaLinkedinIn size={18} />
               </a>
-              <a href="#" aria-label="GitHub" className="hover:text-white">
+              <a href="https://github.com/parmanandprojects" aria-label="GitHub" className="hover:text-white">
                 <FaGithub size={18} />
               </a>
             </div>
