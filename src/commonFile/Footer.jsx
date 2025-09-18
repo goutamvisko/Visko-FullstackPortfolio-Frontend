@@ -51,7 +51,7 @@ const Footer = () => {
         {/* Logo */}
         <motion.div className="flex items-center mb-6" variants={itemVariants}>
           <FaCode className="text-green-400 text-4xl mr-2" />
-          <span className="text-2xl font-bold">Param.dev</span>
+          <span className="text-2xl font-bold">Priyanshu.dev</span>
         </motion.div>
 
         {/* Social Media Icons */}

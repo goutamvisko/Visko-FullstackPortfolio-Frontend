@@ -14,6 +14,8 @@ import { Autoplay } from "swiper/modules";
 import resume from "../assets/img/priyanshu_cv.pdf";
 import "swiper/css";
 import "swiper/css/autoplay";
+import param from "../assets/img/param.jpeg";
+
 
 const profileImageUrl =
   "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=774&q=80";
@@ -109,7 +111,7 @@ const Hero = () => {
                   }}
                 >
                   <img
-                    src={profileImageUrl}
+                    src={param}
                     alt="Param - Full Stack Developer"
                     className="w-full h-full object-cover"
                   />

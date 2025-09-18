@@ -31,7 +31,7 @@ const Navbar = () => {
             {/* Logo */}
             <a href="#" className="flex items-center space-x-2">
               <FaCode className="text-green-400 text-3xl" />
-              <span className="text-xl font-bold text-white">Param.dev</span>
+              <span className="text-xl font-bold text-white">Priyanshu.dev</span>
             </a>
           </div>
 

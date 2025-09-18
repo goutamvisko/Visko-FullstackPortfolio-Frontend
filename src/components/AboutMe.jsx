@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-
+import param from "../assets/img/param.jpeg";
 export default function About({ id }) {
   return (
     <section
@@ -42,7 +42,7 @@ export default function About({ id }) {
             >
               <div className="h-full w-full bg-[#3c3c43] rounded-full">
                 <img
-                  src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=2070&q=80"
+                  src={param}
                   alt="Profile"
                   className="w-full h-full object-cover rounded-full"
                 />
