@@ -47,7 +47,7 @@ const Contact = ({id}) => {
               </div>
               <div>
                 <p className="text-gray-400">Phone Number</p>
-                <p className="text-white font-semibold">+1-234-567-8901</p>
+                <p className="text-white font-semibold">+917898695907</p>
               </div>
             </div>
             <div className="flex items-center gap-4">
@@ -63,10 +63,6 @@ const Contact = ({id}) => {
               <div className="bg-gray-800 p-3 rounded-md">
                 <FaSkype className="text-green-400 text-xl" />
               </div>
-              <div>
-                <p className="text-gray-400">Skype</p>
-                <p className="text-white font-semibold">WilliamDesignUX</p>
-              </div>
             </div>
             <div className="flex items-center gap-4">
               <div className="bg-gray-800 p-3 rounded-md">
@@ -74,7 +70,7 @@ const Contact = ({id}) => {
               </div>
               <div>
                 <p className="text-gray-400">Address</p>
-                <p className="text-white font-semibold">0811 Erdman Prairie, Joaville CA</p>
+                <p className="text-white font-semibold">Indore, India</p>
               </div>
             </div>
           </div>
