@@ -56,7 +56,7 @@ const Contact = ({id}) => {
               </div>
               <div>
                 <p className="text-gray-400">Email</p>
-                <p className="text-white font-semibold">contact@william.design</p>
+                <p className="text-white font-semibold">contact@priyanshu.com</p>
               </div>
             </div>
             <div className="flex items-center gap-4">
