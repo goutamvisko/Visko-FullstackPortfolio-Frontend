@@ -16,7 +16,6 @@ import "swiper/css";
 import "swiper/css/autoplay";
 import param from "../assets/img/param.jpeg";
 
-
 const profileImageUrl =
   "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=774&q=80";
 
@@ -112,7 +111,7 @@ const Hero = () => {
                 >
                   <img
                     src={param}
-                    alt="Param - Full Stack Developer"
+                    alt="Priyanshu - Full Stack Developer"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -125,7 +124,7 @@ const Hero = () => {
                   variants={itemVariants}
                 >
                   <span className="text-pink-500">&lt;span&gt;</span> Hey, I'm
-                  Param <span className="text-pink-500">&lt;/span&gt;</span>
+                  Priyanshu <span className="text-pink-500">&lt;/span&gt;</span>
                 </motion.p>
                 <motion.h1
                   className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4"
